@@ -1,0 +1,800 @@
+<!doctype html>
+<html lang="pt-BR">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <meta
+      name="description"
+      content="Cozinha do Chef — receitas e planejamento para a vida real. Receba receitas prontas, cardápio da semana e lista de compras."
+    />
+    <title>Cozinha do Chef — Receitas e Planejamento pra Vida Real</title>
+
+    <!-- Google Fonts (Inter) -->
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&display=swap"
+      rel="stylesheet"
+    />
+
+    <link rel="stylesheet" href="style.css" />
+  </head>
+
+  <body>
+    <a class="skip-link" href="#conteudo">Pular para o conteúdo</a>
+
+    <!-- 1) Top bar fixa -->
+    <header class="topbar" id="topbar" role="banner">
+      <div class="container topbar__inner">
+        <div class="brand" aria-label="Cozinha do Chef">
+          <span class="brand__mark" aria-hidden="true">
+            <!-- Ícone simples (SVG inline) -->
+            <svg
+              width="22"
+              height="22"
+              viewBox="0 0 24 24"
+              fill="none"
+              aria-hidden="true"
+            >
+              <path
+                d="M6 3v8a4 4 0 0 0 4 4v6h2v-6a4 4 0 0 0 4-4V3h-2v8a2 2 0 0 1-2 2V3h-2v10a2 2 0 0 1-2-2V3H6z"
+                stroke="currentColor"
+                stroke-width="1.8"
+                stroke-linecap="round"
+                stroke-linejoin="round"
+              />
+            </svg>
+          </span>
+          <span class="brand__name">Cozinha do Chef</span>
+        </div>
+
+        <nav class="topbar__nav" aria-label="Navegação">
+          <a class="navlink" href="#como-funciona">Como funciona</a>
+          <a class="navlink" href="#o-que-recebe">O que você recebe</a>
+          <a class="navlink" href="#faq">FAQ</a>
+          <a class="navlink navlink--accent" href="#lead">Receber receitas</a>
+        </nav>
+
+        <div class="topbar__cta">
+          <button
+            class="btn btn--primary btn--cta"
+            data-scrollto="#oferta"
+            type="button"
+          >
+            Quero acesso
+          </button>
+        </div>
+
+        <button
+          class="topbar__menu"
+          id="menuBtn"
+          aria-label="Abrir menu"
+          aria-controls="mobileMenu"
+          aria-expanded="false"
+          type="button"
+        >
+          <span aria-hidden="true">☰</span>
+        </button>
+      </div>
+
+      <!-- Mobile menu -->
+      <div class="mobile-menu" id="mobileMenu" hidden>
+        <div class="container mobile-menu__inner">
+          <a class="mobile-link" href="#como-funciona">Como funciona</a>
+          <a class="mobile-link" href="#o-que-recebe">O que você recebe</a>
+          <a class="mobile-link" href="#faq">FAQ</a>
+          <a class="mobile-link" href="#lead">Receber receitas</a>
+          <button
+            class="btn btn--primary btn--cta w-100"
+            data-scrollto="#oferta"
+            type="button"
+          >
+            Quero acesso
+          </button>
+        </div>
+      </div>
+    </header>
+
+    <main id="conteudo">
+      <!-- 2) HERO -->
+      <section class="hero" aria-label="Apresentação">
+        <div class="container hero__grid">
+          <div class="hero__copy reveal">
+            <p class="kicker">Comida de verdade. Rotina de verdade.</p>
+            <h1 class="hero__title">
+              Não é “mais um perfil de receitas”.
+              <span class="accent"
+                >É um jeito prático de pensar comida na vida real.</span
+              >
+            </h1>
+            <p class="hero__subtitle">
+              A Cozinha do Chef te entrega receitas prontas, planejamento
+              semanal e conteúdo útil pra manter a cozinha funcionando — sem
+              modinha, sem enrolação.
+            </p>
+
+            <div class="hero__actions">
+              <button
+                class="btn btn--secondary btn--cta"
+                data-scrollto="#receita-exemplo"
+                type="button"
+              >
+                Ver receitas da semana
+              </button>
+              <button
+                class="btn btn--primary btn--cta"
+                data-scrollto="#oferta"
+                type="button"
+              >
+                Quero acesso
+              </button>
+            </div>
+
+            <div class="mini-proof" role="note" aria-label="Prova rápida">
+              <div class="mini-proof__item">
+                <span class="mini-proof__label">Atualizações</span>
+                <strong class="mini-proof__value">toda semana</strong>
+              </div>
+              <div class="mini-proof__item">
+                <span class="mini-proof__label">Receitas novas</span>
+                <strong class="mini-proof__value">+X / semana</strong>
+              </div>
+              <div class="mini-proof__item">
+                <span class="mini-proof__label">Foco</span>
+                <strong class="mini-proof__value">rotina</strong>
+              </div>
+            </div>
+
+            <!-- Extra: barra de benefícios -->
+            <div class="benefits-bar reveal" aria-label="Benefícios principais">
+              <div class="benefit">
+                <span class="benefit__icon" aria-hidden="true">⚡</span>
+                <div>
+                  <strong>Rápido</strong>
+                  <p>Receitas que cabem no dia.</p>
+                </div>
+              </div>
+              <div class="benefit">
+                <span class="benefit__icon" aria-hidden="true">🧾</span>
+                <div>
+                  <strong>Simples</strong>
+                  <p>Sem ingredientes impossíveis.</p>
+                </div>
+              </div>
+              <div class="benefit">
+                <span class="benefit__icon" aria-hidden="true">📅</span>
+                <div>
+                  <strong>Planejado</strong>
+                  <p>Cardápio e lista de compras.</p>
+                </div>
+              </div>
+            </div>
+          </div>
+
+          <div class="hero__visual reveal" aria-hidden="true">
+            <div class="hero-card">
+              <div class="hero-card__top">
+                <span class="pill">Premium • Vida real</span>
+                <span class="dot" title="Atualizando semanalmente"></span>
+              </div>
+              <div class="hero-card__body">
+                <p class="hero-card__label">Nesta semana</p>
+                <h3 class="hero-card__title">
+                  Cardápio pronto + lista de compras
+                </h3>
+                <ul class="hero-card__list">
+                  <li>✔ 5 jantares simples</li>
+                  <li>✔ 2 opções rápidas de almoço</li>
+                  <li>✔ 1 receita “coringa” pra sobras</li>
+                </ul>
+                <div class="hero-card__meta">
+                  <span>⏱ 15–35 min</span>
+                  <span>🧠 esforço baixo/médio</span>
+                </div>
+              </div>
+              <div class="hero-card__footer">
+                <button
+                  class="btn btn--primary btn--cta w-100"
+                  data-scrollto="#lead"
+                  type="button"
+                >
+                  Receber receitas
+                </button>
+                <p class="fineprint">Sem spam. Você sai quando quiser.</p>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <!-- 3) Como funciona em 3 passos -->
+      <section class="section" id="como-funciona" aria-label="Como funciona">
+        <div class="container">
+          <header class="section__head reveal">
+            <h2>Como funciona (3 passos)</h2>
+            <p>
+              Você não precisa “virar outra pessoa”. Só precisa de um sistema
+              simples que se repete.
+            </p>
+          </header>
+
+          <div class="steps">
+            <article class="step card reveal">
+              <div class="step__icon" aria-hidden="true">
+                <!-- SVG inline -->
+                <svg width="22" height="22" viewBox="0 0 24 24" fill="none">
+                  <path
+                    d="M7 7h10M7 12h10M7 17h6"
+                    stroke="currentColor"
+                    stroke-width="1.8"
+                    stroke-linecap="round"
+                  />
+                  <path
+                    d="M5 4h14a2 2 0 0 1 2 2v12a2 2 0 0 1-2 2H9l-4 2v-2H5a2 2 0 0 1-2-2V6a2 2 0 0 1 2-2z"
+                    stroke="currentColor"
+                    stroke-width="1.8"
+                    stroke-linejoin="round"
+                  />
+                </svg>
+              </div>
+              <h3>Escolha o cardápio</h3>
+              <p>
+                Você recebe sugestões claras e ajusta para o seu ritmo e
+                orçamento.
+              </p>
+            </article>
+
+            <article class="step card reveal">
+              <div class="step__icon" aria-hidden="true">
+                <svg width="22" height="22" viewBox="0 0 24 24" fill="none">
+                  <path
+                    d="M4 7h16M6 11h12M8 15h8M10 19h4"
+                    stroke="currentColor"
+                    stroke-width="1.8"
+                    stroke-linecap="round"
+                  />
+                  <path
+                    d="M5 3h14a2 2 0 0 1 2 2v16H7a2 2 0 0 0-2 2V5a2 2 0 0 1 2-2z"
+                    stroke="currentColor"
+                    stroke-width="1.8"
+                    stroke-linejoin="round"
+                  />
+                </svg>
+              </div>
+              <h3>Faça a lista de compras</h3>
+              <p>Sem adivinhação: o que comprar, quanto e por quê.</p>
+            </article>
+
+            <article class="step card reveal">
+              <div class="step__icon" aria-hidden="true">
+                <svg width="22" height="22" viewBox="0 0 24 24" fill="none">
+                  <path
+                    d="M7 10l3 3 7-7"
+                    stroke="currentColor"
+                    stroke-width="1.8"
+                    stroke-linecap="round"
+                    stroke-linejoin="round"
+                  />
+                  <path
+                    d="M12 22c5.523 0 10-4.477 10-10S17.523 2 12 2 2 6.477 2 12s4.477 10 10 10z"
+                    stroke="currentColor"
+                    stroke-width="1.8"
+                  />
+                </svg>
+              </div>
+              <h3>Execute no modo “vida real”</h3>
+              <p>
+                Receitas diretas e repetíveis — pra manter constância sem
+                sofrimento.
+              </p>
+            </article>
+          </div>
+        </div>
+      </section>
+
+      <!-- 4) O que você recebe (cards) -->
+      <section
+        class="section section--alt"
+        id="o-que-recebe"
+        aria-label="O que você recebe"
+      >
+        <div class="container">
+          <header class="section__head reveal">
+            <h2>O que você recebe</h2>
+            <p>
+              Conteúdo pensado pra rotina: menos “show”, mais resultado prático.
+            </p>
+          </header>
+
+          <div class="features">
+            <article class="card feature reveal">
+              <h3>Receitas prontas</h3>
+              <p>
+                Opções testadas, com foco em tempo, custo e ingredientes comuns.
+              </p>
+            </article>
+
+            <article class="card feature reveal">
+              <h3>Cardápio da semana</h3>
+              <p>
+                Planejamento simples pra você parar de decidir comida todo dia.
+              </p>
+            </article>
+
+            <article class="card feature reveal">
+              <h3>Lista de compras</h3>
+              <p>
+                Uma lista objetiva para comprar certo e desperdiçar menos
+                reminding.
+              </p>
+            </article>
+
+            <article class="card feature reveal">
+              <h3>Atualizações semanais</h3>
+              <p>Novas receitas, variações e ajustes pra diferentes rotinas.</p>
+            </article>
+          </div>
+        </div>
+      </section>
+
+      <!-- Extra: Receita exemplo (preview) -->
+      <section
+        class="section"
+        id="receita-exemplo"
+        aria-label="Receita exemplo"
+      >
+        <div class="container">
+          <header class="section__head reveal">
+            <h2>Receita exemplo (preview)</h2>
+            <p>
+              Sem passo a passo gigante aqui — só o que importa pra você decidir
+              rápido.
+            </p>
+          </header>
+
+          <article class="recipe-preview card reveal">
+            <div class="recipe-preview__left">
+              <p class="pill pill--outline">Preview</p>
+              <h3>Frango cremoso de panela + legumes</h3>
+              <p class="muted">
+                Uma receita “coringa” que vira jantar, almoço e recheio — sem
+                complicar.
+              </p>
+            </div>
+
+            <div class="recipe-preview__right">
+              <div class="kv">
+                <span class="kv__k">Tempo</span>
+                <span class="kv__v">25–30 min</span>
+              </div>
+              <div class="kv">
+                <span class="kv__k">Esforço</span>
+                <span class="kv__v">Baixo</span>
+              </div>
+              <div class="kv">
+                <span class="kv__k">Por que funciona</span>
+                <span class="kv__v">Reaproveita sobras e rende bem</span>
+              </div>
+
+              <div class="recipe-preview__cta">
+                <button
+                  class="btn btn--secondary btn--cta"
+                  data-scrollto="#lead"
+                  type="button"
+                >
+                  Quero receber receitas
+                </button>
+                <button
+                  class="btn btn--primary btn--cta"
+                  data-scrollto="#oferta"
+                  type="button"
+                >
+                  Quero acesso
+                </button>
+              </div>
+            </div>
+          </article>
+        </div>
+      </section>
+
+      <!-- 5) Para quem é / não é -->
+      <section
+        class="section section--alt"
+        id="publico"
+        aria-label="Para quem é e para quem não é"
+      >
+        <div class="container">
+          <header class="section__head reveal">
+            <h2>Pra quem é (e pra quem não é)</h2>
+            <p>
+              Clareza evita frustração — e melhora a sua chance de manter
+              consistência.
+            </p>
+          </header>
+
+          <div class="two-cols">
+            <div class="card reveal">
+              <h3>✅ Para quem é</h3>
+              <ul class="list">
+                <li>Quem quer cozinhar no dia a dia sem perder horas.</li>
+                <li>
+                  Quem precisa de um plano simples (sem depender de motivação).
+                </li>
+                <li>
+                  Quem quer reduzir desperdício e gastar melhor no mercado.
+                </li>
+                <li>Quem gosta de comida “normal”, repetível e ajustável.</li>
+              </ul>
+            </div>
+
+            <div class="card reveal">
+              <h3>⛔ Para quem não é</h3>
+              <ul class="list">
+                <li>Quem busca receitas “instagramáveis” e ultra complexas.</li>
+                <li>Quem quer dieta da moda ou promessas milagrosas.</li>
+                <li>
+                  Quem não pretende cozinhar nada (nem o básico) na semana.
+                </li>
+                <li>Quem quer conteúdo longo e teórico — aqui é prática.</li>
+              </ul>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <!-- 6) Seção de Oferta -->
+      <section class="section" id="oferta" aria-label="Oferta">
+        <div class="container">
+          <header class="section__head reveal">
+            <h2>Oferta</h2>
+            <p>Um acesso direto ao que resolve a semana — sem barulho.</p>
+          </header>
+
+          <div class="offer">
+            <article class="offer__card card reveal">
+              <div class="offer__head">
+                <h3>Acesso Cozinha do Chef</h3>
+                <p class="muted">
+                  Receitas + planejamento semanal + atualizações
+                </p>
+              </div>
+
+              <ul class="offer__bullets">
+                <li>✔ Receitas prontas (vida real)</li>
+                <li>✔ Cardápio da semana (pronto pra usar)</li>
+                <li>✔ Lista de compras (objetiva)</li>
+                <li>✔ Atualizações semanais</li>
+                <li>✔ Conteúdos práticos (sem modinha)</li>
+              </ul>
+
+              <div class="offer__price" aria-label="Preço">
+                <div>
+                  <span class="price__label">Preço</span>
+                  <div class="price__value">
+                    R$ XX,XX
+                    <span class="price__small">/ mês (placeholder)</span>
+                  </div>
+                </div>
+                <div class="guarantee">
+                  <span class="guarantee__badge" aria-hidden="true">🛡</span>
+                  <div>
+                    <strong>Garantia</strong>
+                    <p class="muted">7 dias (placeholder)</p>
+                  </div>
+                </div>
+              </div>
+
+              <button
+                class="btn btn--primary btn--xl btn--cta"
+                id="buyBtn"
+                type="button"
+              >
+                Quero acesso agora
+              </button>
+
+              <p class="fineprint">
+                Pagamento e acesso são placeholders neste template. Integre com
+                seu checkout quando quiser.
+              </p>
+            </article>
+
+            <aside class="offer__side reveal" aria-label="Redução de objeções">
+              <div class="card">
+                <h4>Sem tempo?</h4>
+                <p class="muted">
+                  O objetivo não é cozinhar “perfeito”. É ter um plano repetível
+                  pra você não travar no dia a dia.
+                </p>
+              </div>
+              <div class="card">
+                <h4>Medo de ser complicado?</h4>
+                <p class="muted">
+                  Receitas com ingredientes comuns e instruções diretas. A
+                  complexidade fica do lado de fora.
+                </p>
+              </div>
+              <div class="card">
+                <h4>Preciso seguir à risca?</h4>
+                <p class="muted">
+                  Não. A estrutura é pra te dar direção — você adapta para sua
+                  casa, gosto e bolso.
+                </p>
+              </div>
+            </aside>
+          </div>
+        </div>
+      </section>
+
+      <!-- 7) Depoimentos -->
+      <section
+        class="section section--alt"
+        id="depoimentos"
+        aria-label="Depoimentos"
+      >
+        <div class="container">
+          <header class="section__head reveal">
+            <h2>Depoimentos</h2>
+            <p>
+              Prova social com dados placeholders (troque pelos seus reais).
+            </p>
+          </header>
+
+          <div class="testimonials">
+            <article class="card testimonial reveal">
+              <p class="testimonial__text">
+                “Pare de inventar jantar todo dia. O cardápio pronto me salvou
+                na rotina.”
+              </p>
+              <div class="testimonial__meta">
+                <strong>Marina S.</strong>
+                <span class="muted">• mãe, trabalha em horário comercial</span>
+              </div>
+            </article>
+
+            <article class="card testimonial reveal">
+              <p class="testimonial__text">
+                “A lista de compras é o melhor: compro certo e desperdiço
+                menos.”
+              </p>
+              <div class="testimonial__meta">
+                <strong>Rafael G.</strong>
+                <span class="muted">• mora sozinho</span>
+              </div>
+            </article>
+
+            <article class="card testimonial reveal">
+              <p class="testimonial__text">
+                “Receitas simples, sem firula. Dá pra manter — e isso é raro.”
+              </p>
+              <div class="testimonial__meta">
+                <strong>Camila R.</strong>
+                <span class="muted">• rotina corrida, academia à noite</span>
+              </div>
+            </article>
+
+            <article class="card testimonial reveal">
+              <p class="testimonial__text">
+                “Finalmente um conteúdo que parece vida real e não ‘cozinha de
+                estúdio’.”
+              </p>
+              <div class="testimonial__meta">
+                <strong>Diego P.</strong>
+                <span class="muted">• estudante</span>
+              </div>
+            </article>
+          </div>
+        </div>
+      </section>
+
+      <!-- 8) FAQ (acordeão) -->
+      <section class="section" id="faq" aria-label="Perguntas frequentes">
+        <div class="container">
+          <header class="section__head reveal">
+            <h2>FAQ</h2>
+            <p>Respostas diretas pra reduzir dúvida e acelerar decisão.</p>
+          </header>
+
+          <div class="faq">
+            <div class="faq__item card reveal">
+              <button class="faq__q" type="button" aria-expanded="false">
+                Isso é só um monte de receita?
+                <span class="faq__icon" aria-hidden="true">+</span>
+              </button>
+              <div class="faq__a" hidden>
+                <p>
+                  Não. Você recebe receitas prontas, mas o principal é o
+                  <strong>planejamento</strong> e o conteúdo prático de rotina
+                  (como montar semana, reaproveitar, reduzir desperdício).
+                </p>
+              </div>
+            </div>
+
+            <div class="faq__item card reveal">
+              <button class="faq__q" type="button" aria-expanded="false">
+                Preciso seguir o cardápio exatamente?
+                <span class="faq__icon" aria-hidden="true">+</span>
+              </button>
+              <div class="faq__a" hidden>
+                <p>
+                  Não. A ideia é te dar direção e reduzir decisões. Você adapta
+                  para gosto, bolso e tempo.
+                </p>
+              </div>
+            </div>
+
+            <div class="faq__item card reveal">
+              <button class="faq__q" type="button" aria-expanded="false">
+                As receitas são difíceis?
+                <span class="faq__icon" aria-hidden="true">+</span>
+              </button>
+              <div class="faq__a" hidden>
+                <p>
+                  O foco é <strong>baixo a médio esforço</strong>. Sem
+                  ingredientes raros, sem passo a passo interminável.
+                </p>
+              </div>
+            </div>
+
+            <div class="faq__item card reveal">
+              <button class="faq__q" type="button" aria-expanded="false">
+                Como funciona o acesso / pagamento?
+                <span class="faq__icon" aria-hidden="true">+</span>
+              </button>
+              <div class="faq__a" hidden>
+                <p>
+                  Este template simula a compra. Em produção, você integra com
+                  seu checkout (Hotmart, Mercado Pago, Stripe etc.) e libera
+                  acesso automaticamente.
+                </p>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <!-- 9) Seção de Lead (formulário) -->
+      <section
+        class="section section--alt"
+        id="lead"
+        aria-label="Receber receitas por email"
+      >
+        <div class="container">
+          <div class="lead-grid">
+            <div class="lead-copy reveal">
+              <h2>Quer receber receitas e o cardápio da semana?</h2>
+              <p>
+                Deixe seu email e (se quiser) WhatsApp. Você recebe um preview
+                das receitas e avisos de atualização. Sem spam e com
+                consentimento claro.
+              </p>
+              <ul class="list">
+                <li>✔ Preview semanal (placeholder)</li>
+                <li>✔ Ideias “vida real” pra não travar na cozinha</li>
+                <li>✔ Convite para o acesso completo quando abrir</li>
+              </ul>
+            </div>
+
+            <form class="card lead-form reveal" id="leadForm" novalidate>
+              <div class="form-row">
+                <label for="nome">Nome completo</label>
+                <input
+                  id="nome"
+                  name="nome"
+                  type="text"
+                  autocomplete="name"
+                  placeholder="Ex.: Ana Paula Souza"
+                />
+                <p
+                  class="field-error"
+                  id="errNome"
+                  role="alert"
+                  aria-live="polite"
+                ></p>
+              </div>
+
+              <div class="form-row">
+                <label for="email"
+                  >Email <span aria-hidden="true">*</span></label
+                >
+                <input
+                  id="email"
+                  name="email"
+                  type="email"
+                  autocomplete="email"
+                  placeholder="voce@exemplo.com"
+                  required
+                />
+                <p
+                  class="field-error"
+                  id="errEmail"
+                  role="alert"
+                  aria-live="polite"
+                ></p>
+              </div>
+
+              <div class="form-row">
+                <label for="whats">WhatsApp (opcional)</label>
+                <input
+                  id="whats"
+                  name="whats"
+                  type="tel"
+                  inputmode="tel"
+                  autocomplete="tel"
+                  placeholder="(XX) 9XXXX-XXXX"
+                />
+                <p
+                  class="field-error"
+                  id="errWhats"
+                  role="alert"
+                  aria-live="polite"
+                ></p>
+              </div>
+
+              <div class="form-row form-row--check">
+                <input id="consent" name="consent" type="checkbox" />
+                <label for="consent">
+                  Concordo em receber comunicações da Cozinha do Chef e entendo
+                  que posso cancelar a qualquer momento.
+                </label>
+              </div>
+              <p
+                class="field-error"
+                id="errConsent"
+                role="alert"
+                aria-live="polite"
+              ></p>
+
+              <button class="btn btn--primary btn--xl btn--cta" type="submit">
+                Quero receber as receitas
+              </button>
+
+              <div
+                class="form-success"
+                id="formSuccess"
+                role="status"
+                aria-live="polite"
+                hidden
+              >
+                ✅ Cadastro recebido! (simulação) — em produção, conecte ao seu
+                backend/CRM.
+              </div>
+
+              <p class="fineprint">
+                LGPD: seus dados serão usados apenas para enviar conteúdos e
+                comunicações da Cozinha do Chef.
+              </p>
+            </form>
+          </div>
+        </div>
+      </section>
+
+      <!-- 10) Rodapé -->
+      <footer class="footer" aria-label="Rodapé">
+        <div class="container footer__inner">
+          <div class="footer__left">
+            <div class="brand brand--footer">
+              <span class="brand__mark" aria-hidden="true">🍊</span>
+              <span class="brand__name">Cozinha do Chef</span>
+            </div>
+            <p class="muted">Comida pensada para a vida real.</p>
+          </div>
+
+          <div class="footer__links" aria-label="Links do rodapé">
+            <a href="#" class="footer__link">Política</a>
+            <a href="#" class="footer__link">Termos</a>
+            <a href="#" class="footer__link">Contato</a>
+          </div>
+
+          <div class="footer__right">
+            <p class="muted">
+              © <span id="year"></span> Cozinha do Chef. Todos os direitos
+              reservados.
+            </p>
+          </div>
+        </div>
+      </footer>
+    </main>
+
+    <script src="script.js"></script>
+  </body>
+</html>
